@@ -40,6 +40,16 @@ class CheckInIngTableViewController: UITableViewController{
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        if(!Reachability.isConnectedToNetwork()){
+            let alert=UIAlertController(title: "안내", message: "인터넷 연결을 확인하세요.", preferredStyle: UIAlertControllerStyle.alert)
+            let action=UIAlertAction(title: "확인", style: UIAlertActionStyle.default){(UIAlertAction)->Void in
+                exit(0)
+            }
+            alert.addAction(action)
+            self.present(alert, animated: true, completion: nil)
+            
+        }
+
         let stringURL="http://220.149.124.129:8080/CSSLibrary/checkining.jsp"
         if let url=URL(string: stringURL){
             if let data=NSData(contentsOf: url){
@@ -69,18 +79,6 @@ class CheckInIngTableViewController: UITableViewController{
 
         // Configure the cell...
         column=record[indexPath.row].components(separatedBy: ";")
-        /*if let label=cell.viewWithTag(101) as? UILabel{
-            label.text=column[0]
-        }
-        else if let label=cell.viewWithTag(102) as? UILabel{
-            label.text=column[3]
-        }
-        else if let label=cell.viewWithTag(103) as? UILabel{
-            label.text=column[2]
-        }
-        else if let label=cell.viewWithTag(104) as? UILabel{
-            label.text=column[1]
-        }*/
         cell.type.text=column[0]
         cell.title.text=column[1]
         cell.author.text=column[2]
@@ -89,7 +87,13 @@ class CheckInIngTableViewController: UITableViewController{
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell=tableView.cellForRow(at: indexPath) as! CheckInIngTableViewCell
         tableView.deselectRow(at: indexPath, animated: true)
+        let alert=UIAlertController(title: "안내", message: cell.title.text ,preferredStyle: UIAlertControllerStyle.alert)
+        let action=UIAlertAction(title: "확인", style: UIAlertActionStyle.default, handler: nil)
+        alert.addAction(action)
+        self.present(alert,animated: true, completion: nil)
+        
     }
 
     /*

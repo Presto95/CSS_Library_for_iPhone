@@ -16,7 +16,6 @@
 		1926DA7B1F2B0E12006CECA9 /* ChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1926DA7A1F2B0E12006CECA9 /* ChangeViewController.swift */; };
 		19655EBD1F2A54A3009137DA /* BugReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19655EBC1F2A54A3009137DA /* BugReportViewController.swift */; };
 		19655EC01F2A5553009137DA /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19655EBF1F2A5553009137DA /* MessageUI.framework */; };
-		19655EC21F2A6352009137DA /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19655EC11F2A6352009137DA /* Media.xcassets */; };
 		1967A8571F2B46D6003CA22A /* CheckOutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1967A8561F2B46D6003CA22A /* CheckOutTableViewController.swift */; };
 		1967A8591F2B46E0003CA22A /* CheckOutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1967A8581F2B46E0003CA22A /* CheckOutTableViewCell.swift */; };
 		197695C11F28D99F00A4B332 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197695C01F28D99F00A4B332 /* AppDelegate.swift */; };
@@ -25,7 +24,8 @@
 		197695C91F28D99F00A4B332 /* CSSLibrary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 197695C71F28D99F00A4B332 /* CSSLibrary.xcdatamodeld */; };
 		197695CB1F28D99F00A4B332 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 197695CA1F28D99F00A4B332 /* Assets.xcassets */; };
 		197695CE1F28D99F00A4B332 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 197695CC1F28D99F00A4B332 /* LaunchScreen.storyboard */; };
-		197695D81F28DAEB00A4B332 /* csslogo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 197695D71F28DAEB00A4B332 /* csslogo1.png */; };
+		19E54A611F2EEA830071F938 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E54A601F2EEA830071F938 /* SystemConfiguration.framework */; };
+		19E54A631F2EEC780071F938 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E54A621F2EEC780071F938 /* Reachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,10 +38,9 @@
 		1926DA7A1F2B0E12006CECA9 /* ChangeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeViewController.swift; sourceTree = "<group>"; };
 		19655EBC1F2A54A3009137DA /* BugReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BugReportViewController.swift; sourceTree = "<group>"; };
 		19655EBF1F2A5553009137DA /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		19655EC11F2A6352009137DA /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = ../Media.xcassets; sourceTree = "<group>"; };
 		1967A8561F2B46D6003CA22A /* CheckOutTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckOutTableViewController.swift; sourceTree = "<group>"; };
 		1967A8581F2B46E0003CA22A /* CheckOutTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckOutTableViewCell.swift; sourceTree = "<group>"; };
-		197695BD1F28D99F00A4B332 /* CSSLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSSLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		197695BD1F28D99F00A4B332 /* 크스스 도서관.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "크스스 도서관.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		197695C01F28D99F00A4B332 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		197695C21F28D99F00A4B332 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		197695C51F28D99F00A4B332 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -49,7 +48,8 @@
 		197695CA1F28D99F00A4B332 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		197695CD1F28D99F00A4B332 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		197695CF1F28D99F00A4B332 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		197695D71F28DAEB00A4B332 /* csslogo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = csslogo1.png; path = ../../../Downloads/csslogo1.png; sourceTree = "<group>"; };
+		19E54A601F2EEA830071F938 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		19E54A621F2EEC780071F938 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19E54A611F2EEA830071F938 /* SystemConfiguration.framework in Frameworks */,
 				19655EC01F2A5553009137DA /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,6 +68,7 @@
 		19655EBE1F2A5552009137DA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				19E54A601F2EEA830071F938 /* SystemConfiguration.framework */,
 				19655EBF1F2A5553009137DA /* MessageUI.framework */,
 			);
 			name = Frameworks;
@@ -75,7 +77,6 @@
 		197695B41F28D99F00A4B332 = {
 			isa = PBXGroup;
 			children = (
-				19655EC11F2A6352009137DA /* Media.xcassets */,
 				197695BF1F28D99F00A4B332 /* CSSLibrary */,
 				197695BE1F28D99F00A4B332 /* Products */,
 				19655EBE1F2A5552009137DA /* Frameworks */,
@@ -85,7 +86,7 @@
 		197695BE1F28D99F00A4B332 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				197695BD1F28D99F00A4B332 /* CSSLibrary.app */,
+				197695BD1F28D99F00A4B332 /* 크스스 도서관.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,22 +95,22 @@
 			isa = PBXGroup;
 			children = (
 				197695C01F28D99F00A4B332 /* AppDelegate.swift */,
-				19158ECC1F2A405900BB727A /* AnotherViewController.swift */,
-				1926DA7A1F2B0E12006CECA9 /* ChangeViewController.swift */,
-				197695C21F28D99F00A4B332 /* ViewController.swift */,
 				197695C41F28D99F00A4B332 /* Main.storyboard */,
 				197695CA1F28D99F00A4B332 /* Assets.xcassets */,
-				197695D71F28DAEB00A4B332 /* csslogo1.png */,
 				197695CC1F28D99F00A4B332 /* LaunchScreen.storyboard */,
 				197695CF1F28D99F00A4B332 /* Info.plist */,
 				197695C71F28D99F00A4B332 /* CSSLibrary.xcdatamodeld */,
-				19655EBC1F2A54A3009137DA /* BugReportViewController.swift */,
-				1919D8FA1F2B26B1007534FD /* CheckInIngTableViewController.swift */,
+				19E54A621F2EEC780071F938 /* Reachability.swift */,
+				197695C21F28D99F00A4B332 /* ViewController.swift */,
 				1919D8FC1F2B2BE4007534FD /* CheckInTableViewController.swift */,
-				1919D9001F2B436D007534FD /* CheckInIngTableViewCell.swift */,
+				190FE4AC1F2B5A5000315F73 /* CheckInTableViewCell.swift */,
 				1967A8561F2B46D6003CA22A /* CheckOutTableViewController.swift */,
 				1967A8581F2B46E0003CA22A /* CheckOutTableViewCell.swift */,
-				190FE4AC1F2B5A5000315F73 /* CheckInTableViewCell.swift */,
+				1919D8FA1F2B26B1007534FD /* CheckInIngTableViewController.swift */,
+				1919D9001F2B436D007534FD /* CheckInIngTableViewCell.swift */,
+				19158ECC1F2A405900BB727A /* AnotherViewController.swift */,
+				1926DA7A1F2B0E12006CECA9 /* ChangeViewController.swift */,
+				19655EBC1F2A54A3009137DA /* BugReportViewController.swift */,
 				190FE4AE1F2B6EF800315F73 /* ScheduleViewController.swift */,
 			);
 			path = CSSLibrary;
@@ -132,7 +133,7 @@
 			);
 			name = CSSLibrary;
 			productName = CSSLibrary;
-			productReference = 197695BD1F28D99F00A4B332 /* CSSLibrary.app */;
+			productReference = 197695BD1F28D99F00A4B332 /* 크스스 도서관.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -175,10 +176,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19655EC21F2A6352009137DA /* Media.xcassets in Resources */,
 				197695CE1F28D99F00A4B332 /* LaunchScreen.storyboard in Resources */,
 				197695CB1F28D99F00A4B332 /* Assets.xcassets in Resources */,
-				197695D81F28DAEB00A4B332 /* csslogo1.png in Resources */,
 				197695C61F28D99F00A4B332 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -190,6 +189,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19E54A631F2EEC780071F938 /* Reachability.swift in Sources */,
 				190FE4AF1F2B6EF800315F73 /* ScheduleViewController.swift in Sources */,
 				1967A8591F2B46E0003CA22A /* CheckOutTableViewCell.swift in Sources */,
 				1926DA7B1F2B0E12006CECA9 /* ChangeViewController.swift in Sources */,
@@ -330,7 +330,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = css.CSSLibrary;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "크스스 도서관";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -344,7 +344,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = css.CSSLibrary;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "크스스 도서관";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

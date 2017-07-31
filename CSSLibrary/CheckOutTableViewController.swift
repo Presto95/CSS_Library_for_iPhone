@@ -37,6 +37,15 @@ class CheckOutTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     override func viewDidAppear(_ animated: Bool) {
+        if(!Reachability.isConnectedToNetwork()){
+            let alert=UIAlertController(title: "안내", message: "인터넷 연결을 확인하세요.", preferredStyle: UIAlertControllerStyle.alert)
+            let action=UIAlertAction(title: "확인", style: UIAlertActionStyle.default){(UIAlertAction)->Void in
+                exit(0)
+            }
+            alert.addAction(action)
+            self.present(alert, animated: true, completion: nil)
+            
+        }
         CheckOut()
         self.record=self.result.components(separatedBy: ":")
         tableView.reloadData()
@@ -67,7 +76,7 @@ class CheckOutTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let cell=tableView.cellForRow(at: indexPath) as! CheckOutTableViewCell
-        let alert=UIAlertController(title: "안내", message: cell.title.text!+"\n이 책을 반납합니다.", preferredStyle: .alert)
+        let alert=UIAlertController(title: "안내", message: cell.title.text!+"\n\n이 책을 반납합니다.", preferredStyle: .alert)
         let yesAction=UIAlertAction(title: "확인", style: .default){(action: UIAlertAction) -> Void in
             //서버 통신
             var stringURL="http://220.149.124.129:8080/CSSLibrary/update2.jsp?"

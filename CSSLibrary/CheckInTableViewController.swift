@@ -25,6 +25,15 @@ class CheckInTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        var stringURL="http://220.149.124.129:8080/CSSLibrary/checkin.jsp?type=제목&keyword= "
+        stringURL=stringURL.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
+        if let url=URL(string: stringURL){
+            if let data=NSData(contentsOf: url){
+                self.result=NSString(data: data as Data, encoding: String.Encoding.utf8.rawValue) as String!
+                self.result=self.result.trimmingCharacters(in: .whitespacesAndNewlines)
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,9 +42,19 @@ class CheckInTableViewController: UITableViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        if(!Reachability.isConnectedToNetwork()){
+            let alert=UIAlertController(title: "안내", message: "인터넷 연결을 확인하세요.", preferredStyle: UIAlertControllerStyle.alert)
+            let action=UIAlertAction(title: "확인", style: UIAlertActionStyle.default){(UIAlertAction)->Void in
+                exit(0)
+            }
+            alert.addAction(action)
+            self.present(alert, animated: true, completion: nil)
+            
+        }
         if(isSearched){
             Search()
         }
+        isSearched=false
     }
 
     // MARK: - Table view data source
@@ -73,7 +92,7 @@ class CheckInTableViewController: UITableViewController {
             self.present(alert,animated: true, completion: nil)
             return
         }
-        let alert=UIAlertController(title: "안내", message: cell.title.text!+"\n이 책을 대출합니다.", preferredStyle: .alert)
+        let alert=UIAlertController(title: "안내", message: cell.title.text!+"\n\n이 책을 대출합니다.", preferredStyle: .alert)
         let yesAction=UIAlertAction(title: "확인", style: .default){(action: UIAlertAction) -> Void in
             
             var stringURL="http://220.149.124.129:8080/CSSLibrary/insert.jsp?"
@@ -160,7 +179,7 @@ class CheckInTableViewController: UITableViewController {
             if let input=alert.textFields![0].text{
                 self.keyword=input
                 //통신
-                var stringURL="http://220.149.124.129:8080/CSSLibrary/checkin.jsp?type=제목&keyword="+input
+                /*var stringURL="http://220.149.124.129:8080/CSSLibrary/checkin.jsp?type=제목&keyword="+input
                 stringURL=stringURL.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
                 if let url=URL(string: stringURL){
                     if let data=NSData(contentsOf: url){
@@ -176,7 +195,16 @@ class CheckInTableViewController: UITableViewController {
                 let alert=UIAlertController(title: "안내", message: "값을 입력하세요.", preferredStyle: .alert)
                 let action=UIAlertAction(title: "확인", style: .default, handler: nil)
                 alert.addAction(action)
-                self.present(alert,animated: true, completion: nil)
+                self.present(alert,animated: true, completion: nil)*/
+                if(input.trimmingCharacters(in: .whitespaces)==""){
+                    let alert=UIAlertController(title: "안내", message: "값을 입력하세요.", preferredStyle: .alert)
+                    let action=UIAlertAction(title: "확인", style: .default, handler: nil)
+                    alert.addAction(action)
+                    self.present(alert,animated: true, completion: nil)
+                    return
+                }
+                self.isSearched=true
+                self.Search()
             }
             
         }
@@ -195,8 +223,18 @@ class CheckInTableViewController: UITableViewController {
                 self.result=self.result.trimmingCharacters(in: .whitespacesAndNewlines)
             }
         }
-        self.record=self.result.components(separatedBy: ":")
-        self.tableView.reloadData()
+        if(result==""){
+            let alert=UIAlertController(title: "안내", message: "검색 결과가 없습니다.", preferredStyle: .alert)
+            let action=UIAlertAction(title: "확인", style: .default, handler: nil)
+            alert.addAction(action)
+            self.present(alert, animated: true, completion: nil)
+            
+        }
+        else{
+            self.record=self.result.components(separatedBy: ":")
+            self.tableView.reloadData()
+        }
+        
     }
 
 }

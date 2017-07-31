@@ -41,7 +41,7 @@ class BugReportViewController: UIViewController, MFMailComposeViewControllerDele
         if MFMailComposeViewController.canSendMail(){
             self.present(mc,animated: true, completion: nil)
         }
-        else{
+        /*else{
             let alertcontroller: UIAlertController=UIAlertController(title: "메일 보내기", message: "현재 디바이스에서 이메일을 보낼 수 없습니다. 설정에서 관련 설정을 확인해주세요.", preferredStyle: UIAlertControllerStyle.alert)
             let defaultAction=UIAlertAction(title: "확인", style: .default, handler: {
                 (alert: UIAlertAction!) in
@@ -49,7 +49,7 @@ class BugReportViewController: UIViewController, MFMailComposeViewControllerDele
             alertcontroller.addAction(defaultAction)
             present(alertcontroller,animated: true,completion: nil)
             
-        }
+        }*/
     }
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
         controller.dismiss(animated: true, completion: nil)

@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CSSLibrary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="크스스_도서관" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -60,7 +60,7 @@
                                     </switch>
                                 </subviews>
                             </scrollView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="csslogo1.png" translatesAutoresizingMaskIntoConstraints="NO" id="ype-FE-28o">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="ype-FE-28o">
                                 <rect key="frame" x="40" y="80" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -80,42 +80,42 @@
         <!--대출-->
         <scene sceneID="hIQ-Qv-PF4">
             <objects>
-                <tableViewController storyboardIdentifier="CheckInTableViewController" id="A3Y-rn-ahT" customClass="CheckInTableViewController" customModule="CSSLibrary" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="CheckInTableViewController" id="A3Y-rn-ahT" customClass="CheckInTableViewController" customModule="크스스_도서관" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="98" sectionHeaderHeight="28" sectionFooterHeight="28" id="OOE-5T-Wek">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" rowHeight="98" id="QJY-vK-bu3" customClass="CheckInTableViewCell" customModule="CSSLibrary" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" rowHeight="98" id="QJY-vK-bu3" customClass="CheckInTableViewCell" customModule="크스스_도서관" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="320" height="98"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QJY-vK-bu3" id="1N7-Sl-Amv">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="97.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="98"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O9A-hp-V8z">
-                                            <rect key="frame" x="8" y="8" width="149" height="21"/>
+                                            <rect key="frame" x="8" y="5" width="149" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="amount" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4nS-PU-kdc">
-                                            <rect key="frame" x="254" y="8" width="58" height="21"/>
+                                            <rect key="frame" x="254" y="5" width="58" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQv-sp-bDH">
-                                            <rect key="frame" x="8" y="37" width="207" height="21"/>
+                                            <rect key="frame" x="8" y="33" width="304" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i2m-40-oBo">
-                                            <rect key="frame" x="8" y="68" width="304" height="21"/>
+                                            <rect key="frame" x="8" y="65" width="304" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <nil key="textColor"/>
@@ -151,13 +151,13 @@
         <!--반납-->
         <scene sceneID="vLU-MI-SLG">
             <objects>
-                <tableViewController id="jsD-GG-UK6" customClass="CheckOutTableViewController" customModule="CSSLibrary" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="jsD-GG-UK6" customClass="CheckOutTableViewController" customModule="크스스_도서관" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="98" sectionHeaderHeight="28" sectionFooterHeight="28" id="Y8Z-3i-pJn">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" rowHeight="98" id="ady-CK-DcI" customClass="CheckOutTableViewCell" customModule="CSSLibrary" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" rowHeight="98" id="ady-CK-DcI" customClass="CheckOutTableViewCell" customModule="크스스_도서관" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="320" height="98"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ady-CK-DcI" id="jcP-jC-ytG">
@@ -165,21 +165,21 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wCk-vd-Ap0">
-                                            <rect key="frame" x="7" y="8" width="259" height="21"/>
+                                            <rect key="frame" x="8" y="3" width="304" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HI6-cj-rnw">
-                                            <rect key="frame" x="7" y="37" width="259" height="21"/>
+                                            <rect key="frame" x="8" y="32" width="304" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZ7-mo-QSt">
-                                            <rect key="frame" x="7" y="66" width="259" height="22"/>
+                                            <rect key="frame" x="8" y="65" width="305" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <nil key="textColor"/>
@@ -208,13 +208,13 @@
         <!--대출중-->
         <scene sceneID="5ho-u5-dQf">
             <objects>
-                <tableViewController storyboardIdentifier="CheckInIngTableViewController" id="Rh7-Yz-LC7" customClass="CheckInIngTableViewController" customModule="CSSLibrary" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="CheckInIngTableViewController" id="Rh7-Yz-LC7" customClass="CheckInIngTableViewController" customModule="크스스_도서관" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" tag="10" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="98" sectionHeaderHeight="28" sectionFooterHeight="28" id="k9Q-Eu-mxg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" tag="11" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" id="yYR-Dv-3L9" customClass="CheckInIngTableViewCell" customModule="CSSLibrary" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" tag="11" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" id="yYR-Dv-3L9" customClass="CheckInIngTableViewCell" customModule="크스스_도서관" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="320" height="98"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="12" contentMode="center" tableViewCell="yYR-Dv-3L9" id="qnm-K2-zCY">
@@ -222,28 +222,28 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tcC-yH-9pf">
-                                            <rect key="frame" x="8" y="8" width="172" height="21"/>
+                                            <rect key="frame" x="8" y="4" width="172" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="103" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EeP-sn-x0b">
-                                            <rect key="frame" x="8" y="37" width="304" height="21"/>
+                                            <rect key="frame" x="8" y="33" width="304" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfF-mz-hVa">
-                                            <rect key="frame" x="8" y="69" width="304" height="21"/>
+                                            <rect key="frame" x="8" y="65" width="304" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="102" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4f-ty-2bI">
-                                            <rect key="frame" x="269" y="8" width="43" height="21"/>
+                                            <rect key="frame" x="269" y="4" width="43" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <nil key="textColor"/>
@@ -282,7 +282,9 @@
         <scene sceneID="1vJ-kA-Oao">
             <objects>
                 <navigationController title="대출중" id="FLr-2w-cdC" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="대출중" id="4hS-JU-82X"/>
+                    <tabBarItem key="tabBarItem" title="대출중" image="CheckInIng Tabbar Icons" id="4hS-JU-82X"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="LFJ-cV-L5r">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -299,7 +301,9 @@
         <scene sceneID="aVE-ln-eLo">
             <objects>
                 <navigationController title="반납" id="wmJ-lG-rgw" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="반납" id="ayG-nk-7hH"/>
+                    <tabBarItem key="tabBarItem" title="반납" image="CheckOut Tabbar Icons" id="ayG-nk-7hH"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="IES-5m-qDT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -316,7 +320,9 @@
         <scene sceneID="zGP-1y-nHC">
             <objects>
                 <navigationController title="대출" id="ENH-kR-SPc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="대출" id="Anu-9w-ZmP"/>
+                    <tabBarItem key="tabBarItem" title="대출" image="CheckIn Tabbar Icons" id="Anu-9w-ZmP"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4g8-EW-ahX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -352,8 +358,8 @@
         <!--더보기-->
         <scene sceneID="NJK-a7-MVh">
             <objects>
-                <tableViewController storyboardIdentifier="AnotherViewController" id="uVM-Je-GeA" customClass="AnotherViewController" customModule="CSSLibrary" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" keyboardDismissMode="interactive" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="9Ph-UV-uqU">
+                <tableViewController storyboardIdentifier="AnotherViewController" id="uVM-Je-GeA" customClass="AnotherViewController" customModule="크스스_도서관" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="interactive" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="9Ph-UV-uqU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -364,23 +370,23 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hIT-3M-Nhv" id="SvG-AE-OLL">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="자동 로그인" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5OU-FL-T03">
-                                                    <rect key="frame" x="16" y="11" width="78" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="uNg-9z-htF">
-                                                    <rect key="frame" x="263" y="5" width="51" height="31"/>
+                                                    <rect key="frame" x="263" y="3" width="51" height="31"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <connections>
                                                         <action selector="isAutoLogin:" destination="uVM-Je-GeA" eventType="valueChanged" id="RFW-sP-BXj"/>
                                                     </connections>
                                                 </switch>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="자동 로그인" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5OU-FL-T03">
+                                                    <rect key="frame" x="17" y="1" width="78" height="39"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -532,7 +538,7 @@
         <!--버그 리포트-->
         <scene sceneID="Kyf-um-yXv">
             <objects>
-                <viewController title="버그 리포트" id="neH-Hn-dEC" customClass="BugReportViewController" customModule="CSSLibrary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="버그 리포트" id="neH-Hn-dEC" customClass="BugReportViewController" customModule="크스스_도서관" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="X1d-tW-ZlK"/>
                         <viewControllerLayoutGuide type="bottom" id="ORc-h5-FQm"/>
@@ -574,7 +580,7 @@
         <!--CSS 스케쥴러-->
         <scene sceneID="Ze4-NY-CBs">
             <objects>
-                <viewController storyboardIdentifier="ScheduleViewController" title="CSS 스케쥴러" id="1ek-gi-Y1c" customClass="ScheduleViewController" customModule="CSSLibrary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ScheduleViewController" title="CSS 스케쥴러" id="1ek-gi-Y1c" customClass="ScheduleViewController" customModule="크스스_도서관" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lGJ-kj-Ix9"/>
                         <viewControllerLayoutGuide type="bottom" id="aco-be-gR6"/>
@@ -629,7 +635,7 @@
         <!--비밀번호 변경-->
         <scene sceneID="Lo3-Qw-CKH">
             <objects>
-                <viewController storyboardIdentifier="ChangeViewController" id="nhs-7o-k8u" customClass="ChangeViewController" customModule="CSSLibrary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChangeViewController" id="nhs-7o-k8u" customClass="ChangeViewController" customModule="크스스_도서관" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2pu-3f-VAE"/>
                         <viewControllerLayoutGuide type="bottom" id="3Iq-Ui-CiX"/>
@@ -688,7 +694,9 @@
         <scene sceneID="BH0-8z-Juz">
             <objects>
                 <navigationController title="더보기" id="Ybq-7T-TTt" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="더보기" id="kMQ-bd-fEd"/>
+                    <tabBarItem key="tabBarItem" title="더보기" image="Another Tabbar Icons" id="kMQ-bd-fEd"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xiH-7g-CgG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -703,6 +711,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="csslogo1.png" width="500" height="214"/>
+        <image name="Another Tabbar Icons" width="25" height="25"/>
+        <image name="CheckIn Tabbar Icons" width="25" height="25"/>
+        <image name="CheckInIng Tabbar Icons" width="25" height="25"/>
+        <image name="CheckOut Tabbar Icons" width="25" height="25"/>
+        <image name="Logo" width="512" height="512"/>
     </resources>
 </document>
